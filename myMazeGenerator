@@ -169,7 +169,6 @@ void myMazeGenerator::generateMaze(Maze& maze)
     
     recursiveMaze(maze, currentRow, currentColumn);
     delete[] visitedCells; 
-
 }
 
 
