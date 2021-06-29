@@ -164,7 +164,6 @@ void myMazeGenerator::generateMaze(Maze& maze)
     }
 
     maze.addAllWalls();
-
     currentRow = 0;
     currentColumn = 0;
     
