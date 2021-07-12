@@ -11,7 +11,7 @@ class myMazeGenerator: public MazeGenerator
 public:
     myMazeGenerator();
 
-    //~myMazeGenerator();
+
 
     // generateMaze() is given a reference to a Maze object.  Its job is
     // to generate a new maze within that Maze object.  It is unwise to
@@ -23,16 +23,6 @@ public:
     bool checkVisitedCells(int, int);
 
     void recursiveMaze(Maze& maze, int, int);
-
-    //void initVisitedCells(Maze& maze);
-
-    //void topLeftCell(Maze& maze, int); //function to move from the first cell
-
-    //void topRightCell(Maze&maze, int); //function to move from top right cell
-
-    //void topRowCells(Maze&maze , int); //function to move from all other top cells
-
-    //void addToVisitedCell();
 
 private:
     int rows;
