@@ -24,7 +24,7 @@ void myMazeGenerator::recursiveMaze(Maze& maze, int row, int column)
     //if in this row, cannot move upwards
     if (row == 0) 
     {
-        while (checkVisitedCells(row+1,column)==false||(column!=0 && checkVisitedCells(row,column-1)==false)||(column!=columns-1 && checkVisitedCells(row,column+1)==false))
+        while (checkVisitedCells(row+1,column)==false || (column!=0 && checkVisitedCells(row,column-1)==false) || (column!=columns-1 && checkVisitedCells(row,column+1)==false))
         {
             int randomInt = distribution(engine);
             
@@ -49,7 +49,7 @@ void myMazeGenerator::recursiveMaze(Maze& maze, int row, int column)
     //if in this row, cannot move downwards
     if (row == rows-1)
     {
-        while (checkVisitedCells(row-1,column)==false||(column!=0 && checkVisitedCells(row,column-1)==false)||(column!=columns-1 && checkVisitedCells(row,column+1)==false))
+        while (checkVisitedCells(row-1,column)==false || (column!=0 && checkVisitedCells(row,column-1)==false) || (column!=columns-1 && checkVisitedCells(row,column+1)==false))
         {
             int randomInt = distribution(engine);
 
@@ -73,7 +73,7 @@ void myMazeGenerator::recursiveMaze(Maze& maze, int row, int column)
     //if in this row, cannot move leftwards
     if (column == 0) 
     {
-        while ((row!=0 && checkVisitedCells(row-1,column)==false)||(row!=rows-1 && checkVisitedCells(row+1,column)==false)||checkVisitedCells(row,column+1)==false)
+        while ((row!=0 && checkVisitedCells(row-1,column)==false) || (row!=rows-1 && checkVisitedCells(row+1,column)==false) ||checkVisitedCells(row,column+1)==false)
         {
             int randomInt = distribution(engine);
 
@@ -97,7 +97,7 @@ void myMazeGenerator::recursiveMaze(Maze& maze, int row, int column)
     //if in this row, cannot move rightward
     if (column == columns-1) 
     {
-        while ((row!=0 && checkVisitedCells(row-1,column)==false)||(row!=rows-1 && checkVisitedCells(row+1,column)==false)||checkVisitedCells(row,column-1)==false)
+        while ((row!=0 && checkVisitedCells(row-1,column)==false) || (row!=rows-1 && checkVisitedCells(row+1,column)==false) || checkVisitedCells(row,column-1)==false)
         {
             int randomInt = distribution(engine);
 
