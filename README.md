@@ -5,4 +5,4 @@ If the cell has not been visited, it will visit the cell and remove the "wall" t
 Recursion continues until a maze with only one possible solution is created. 
 
 
-This project was an assignment from my university. The MazeGenerator file was provided, as well as the myMazeGenerator header file. My input was the myMazeGenerator.cpp file. 
+This project was an assignment from my university.  
