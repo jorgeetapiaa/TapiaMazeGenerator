@@ -14,10 +14,7 @@ public:
 
 
     // generateMaze() is given a reference to a Maze object.  Its job is
-    // to generate a new maze within that Maze object.  It is unwise to
-    // assume that the Maze object will be in a particular state when
-    // passed in, so it's not a bad idea to start by either removing all
-    // walls or adding all walls (depending on the algorithm).
+    // to generate a new maze within that Maze object.  
     void generateMaze(Maze& maze) override;
 
     bool checkVisitedCells(int, int);
