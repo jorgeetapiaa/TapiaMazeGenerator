@@ -1,22 +1,8 @@
 // Maze.hpp
 //
-// Declares an abstract base class for Maze implementations.  An implementation
-// of this class is provided already, though the source code for it is not
-// being provided to you.
+// Declares an abstract base class for Maze implementations.  
 //
-// Mazes, in general, have the following properties:
-//
-// * They have a size, given by a width and a height
-// * They are made up of cells with (x, y) coordinates, where 0 <= x <= width-1
-//   and 0 <= y <= height-1.
-// * They have a collection of walls vertically and horizontally that can
-//   appear in between each pair of adjacent cells.  Walls can be added
-//   and removed.
-// * They can be cloned, meaning that, for some Maze object of type M, you can
-//   create a dynamically-allocated copy of M that has all the same properties.
-// * They are "observable," which means that they have a collection of
-//   "listeners" associated with them, who are notified whenever the maze
-//   changes.  (This is primarily for use in the GUI.)
+
 
 #ifndef MAZE_HPP
 #define MAZE_HPP
@@ -34,8 +20,7 @@ class Maze : public ics46::observable::Observable<MazeListener>
 {
 public:
     // Because we'll be inheriting from this class, we'll declare the
-    // destructor to be virtual, though we don't need it to do anything
-    // special.
+    // destructor to be virtual
     virtual ~Maze() = default;
 
 
