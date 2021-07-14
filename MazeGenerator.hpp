@@ -1,11 +1,5 @@
 // MazeGenerator.hpp
 //
-// ICS 46 Spring 2021
-// Project #1: Dark at the End of the Tunnel
-//
-// This is an abstract base class for maze generators.  You'll want to create
-// a new class that inherits from this class and provides a generateMaze()
-// implementation.
 
 #ifndef MAZEGENERATOR_HPP
 #define MAZEGENERATOR_HPP
@@ -25,10 +19,7 @@ public:
 
 
     // generateMaze() is given a reference to a Maze object.  Its job is
-    // to generate a new maze within that Maze object.  It is unwise to
-    // assume that the Maze object will be in a particular state when
-    // passed in, so it's not a bad idea to start by either removing all
-    // walls or adding all walls (depending on the algorithm).
+    // to generate a new maze within that Maze object.  
     virtual void generateMaze(Maze& maze) = 0;
 };
 
